@@ -1,11 +1,14 @@
 # Code Book
-run_analysis.R scripts reads the Samsung data from working directory and applys assignment's requirements. 
-1. 
-Read files from working directory and named according to "read.me" file in the Samsung Data file.
-*features = 561 rows, 2 columns *
-From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
-*activity_labels = 6 rows, 2 columns*
+Run_analysis.R scripts reads the Samsung data from working directory and applys assignment's requirements. 
 
+
+
+- Read files from working directory and named according to "read.me" file in the Samsung Data file.
+
+*features = 561 rows, 2 columns*
+From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
+
+*activity_labels = 6 rows, 2 columns*
 Contains activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) which is performed and a code that specifies the activity.
 
 *x_test = 2947 rows, 561 columns*
@@ -38,15 +41,11 @@ Merged train_subject and test_subject data which is formed by rbind
 *data_all <- 10299 rows, 563 columns*
 Merged data of X_testtrain,Y_testtrain and subjects data which is formed by cbind
 
-2. 
-Pattern is defined by using regular expressions.It contains mean, std, subjects column and class_names column.
+- Pattern is defined by using regular expressions.It contains mean, std, subjects column and class_names column.
 X contains 10299 rows and 88 columns. It is created by using pattern defined above with grep.
 
-3.
-X1 is formed by merging with x dataset and activity labels. Activity code's merged with definitions.
+- X1 is formed by merging with x dataset and activity labels. Activity code's merged with definitions.
 
-4.
-Abbrevetions replaced by descriptive variables names.
+- Abbrevetions replaced by descriptive variables names.
 
-5.
-X3 a new tidy data is created with the average of each variable for each activity and each subject in x1.
+- X3 a new tidy data is created with the average of each variable for each activity and each subject in x1.
