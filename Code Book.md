@@ -1,5 +1,5 @@
 # Code Book
-Run_analysis.R scripts reads the Samsung data from working directory and applys assignment's requirements. 
+Run_analysis.R script reads the Samsung data from working directory and applys assignment's requirements. 
 
 
 1 . Read files from working directory and named according to "read.me" file in the Samsung Data file.
