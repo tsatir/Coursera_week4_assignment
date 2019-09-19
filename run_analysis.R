@@ -1,14 +1,14 @@
 #read everything! 
 
-setwd("/Users/tugce/Desktop/data science")
-features <- read.table("~/Desktop/data science/UCI HAR Dataset/features.txt", col.names = c("num", "features"))
-activity_labels <- read.table("~/Desktop/data science/UCI HAR Dataset/activity_labels.txt", col.names = c("class_labels", "act_names"))
-x_test <- read.table("~/Desktop/data science/UCI HAR Dataset/test/X_test.txt", col.names = features$features )
-y_test <- read.table("~/Desktop/data science/UCI HAR Dataset/test/y_test.txt", col.names = "class_labels")
-x_train <- read.table("~/Desktop/data science/UCI HAR Dataset/train/X_train.txt", col.names = features$features )
-y_train <- read.table("~/Desktop/data science/UCI HAR Dataset/train/y_train.txt", col.names = "class_labels")
-test_subject <- read.table("~/Desktop/data science/UCI HAR Dataset/test/subject_test.txt", col.names = "subject")
-train_subject <- read.table("~/Desktop/data science/UCI HAR Dataset/train/subject_train.txt", col.names = "subject")
+
+features <- read.table("UCI HAR Dataset/features.txt", col.names = c("num", "features"))
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", col.names = c("class_labels", "act_names"))
+x_test <- read.table("UCI HAR Dataset/test/X_test.txt", col.names = features$features )
+y_test <- read.table("UCI HAR Dataset/test/y_test.txt", col.names = "class_labels")
+x_train <- read.table("UCI HAR Dataset/train/X_train.txt", col.names = features$features )
+y_train <- read.table("UCI HAR Dataset/train/y_train.txt", col.names = "class_labels")
+test_subject <- read.table("UCI HAR Dataset/test/subject_test.txt", col.names = "subject")
+train_subject <- read.table("UCI HAR Dataset/train/subject_train.txt", col.names = "subject")
 
 head(x_test)
 X_testtrain <- rbind(x_train, x_test)
